@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './recipe-list.component.scss'
 })
 export class RecipeListComponent {
+  recipes = [];
 
+  constructor() { }
+
+  ngOnInit() {
+    
+  }
 }
