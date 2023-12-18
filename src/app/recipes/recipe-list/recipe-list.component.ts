@@ -9,7 +9,7 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent {
   recipes: Recipe[] = [
-    new Recipe('A Rest Recipe', 'This is simply a test', 'https://pixabay.com/de/photos/gem%C3%BCse-topf-kochen-zutaten-1006694/')
+    new Recipe('A Test Recipe', 'This is simply a test', 'https://cdn.pixabay.com/photo/2015/10/26/07/21/vegetables-1006694_1280.jpg')
   ];
 
   constructor() { }
