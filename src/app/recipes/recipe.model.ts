@@ -1,20 +1,15 @@
+import { Ingredient } from "../shared/ingredient.model";
+
 export class Recipe {
-    // Variablen-Deklaration;
     public name: string;
     public description: string;
     public imagePath: string;
+    public ingredients: Ingredient[];
 
-    constructor (name:string, desc: string, imagePath: string) {
-        //variable = parameter
+    constructor (name:string, desc: string, imagePath: string, ingredients: Ingredient[]) {
         this.name = name;
         this.description = desc;
         this.imagePath = imagePath;
+        this.ingredients = ingredients;
     }
-
-    // Der Constructor ist wie eine Funktion
-    // constructor (parameter, parameter, parameter) {
-    //      this.variable = parameter;
-    //      this.variable = parameter;
-    //      this.variable = parameter;
-    // }
 }
