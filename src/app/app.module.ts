@@ -11,6 +11,14 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { DropDownDirective } from './shared/dropdown.directive';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  // { path: '', component: HomeComponent },
+  { path: 'recipe', component: RecipesComponent },
+  { path: 'shopping-list', component: ShoppingListComponent }
+
+]
 
 @NgModule({
   declarations: [
@@ -25,7 +33,8 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     ShoppingEditComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
