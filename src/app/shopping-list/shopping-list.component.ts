@@ -23,6 +23,10 @@ export class ShoppingListComponent {
     );
   }
 
+  onEditItem(index: number) {
+    this.slService.startedEditing.next(index);
+  }
+
   ngOnDestroy() {
     this.igChangeSub.unsubscribe;
   }
